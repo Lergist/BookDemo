@@ -47,5 +47,10 @@ module.exports = function(environment) {
     // here you can enable a production-specific feature
   }
 
+  if (environment === 'ci') {
+    // here you can enable a production-specific feature
+    ENV.rootURL='/BookDemo/'
+  }
+
   return ENV;
 };
